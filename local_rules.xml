@@ -1,0 +1,17 @@
+<!-- User Failed Authentication from Public IPv4 -->
+<group name="local,syslog,sshd,">
+ <rule id="100004" level="10">
+    <if_sid>5760</if_sid>
+    <match type="pcre2">\b(?!(10)|192\.168|172\.(2[0-9]|1[6-9]|3[0-1])|(25[6-9]|2[6-9][0-9]|[3-9][0-9][0-9]|99[1-9]))[0-9]{1,3}\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)</match>
+    <description>sshd: Authentication failed from a public IP address > $(srcip).</description>
+    <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,</group>
+  </rule>
+</group>
+
+<group name="local,syslog,sshd,">
+  <rule id="100007" level="10">
+    <field name="chatgpt.srcip">\.+</field>
+    <description>IP address $(chatgpt.srcip) trying to connect to the network.</description>
+    <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,</group>
+  </rule>
+</group>
