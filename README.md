@@ -17,7 +17,7 @@ Before you can install the application, ensure that you have the following prere
 
 ## Installation
 
-1. Clone the repository: `git clone anonymouswp/wazuh-chatgpt-integration`
+1. Clone the repository: `git clone https://github.com/AnonymousWP/Wazuh-ChatGPT-integration.git`
 1. Install the required dependencies by running the following command: `pip install -r requirements.txt`
 
 ## Configuration
