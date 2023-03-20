@@ -1,6 +1,11 @@
 # Wazuh ChatGPT integration
 
  A configuration to allow Wazuh to communicate with ChatGPT, based on <https://loggar.hashnode.dev/augmenting-wazuh-with-chatgpt-integration>. All steps and images are taken from the website above. This repo is for mirroring and improvement purposes. Credits mainly go to the author of this integration: WhatDoesKmean?
+ 
+ ![image](https://user-images.githubusercontent.com/50231698/226342392-1364916b-19d9-44a3-8493-51125199f85a.png)
+ 
+ ![image](https://user-images.githubusercontent.com/50231698/226342473-c3f20ac4-71cb-479d-9f87-54d2e687a9de.png)
+
 
 ## Prerequisites
 
